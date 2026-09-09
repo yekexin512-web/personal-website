@@ -22,9 +22,9 @@ export const communication = [
 // Add supplied assets here. Null entries never produce broken images or dead links.
 export const assets:{portrait:string;aboutPhotos:(string|null)[];f1:string|null;monitor:string|null;communication:string[][];email:string|null;linkedin:string|null;resume:string|null;paper:string|null}={portrait:'/kexin-ye-portrait.jpg',aboutPhotos:[null,null],f1:null,monitor:null,communication:[[],[]],email:null,linkedin:null,resume:null,paper:'/research/green-finance-kexin-ye.pdf'};
 export const academicPaper = {
- title:'绿色金融对企业绿色全要素生产率提升的影响研究——基于绿色投资者进入视角',
- journal:'China Prices / 中国物价 · 2025, Issue 5 · pp. 42–47',
- authors:'焦之坚 · 卢思诺 · 叶可昕（通讯作者）',
+ title:'The Impact of Green Finance on Firms’ Green Total Factor Productivity: Evidence from Green Investor Entry',
+ journal:'China Prices · 2025, Issue 5 · pp. 42–47',
+ authors:'Zhijian Jiao · Sinuo Lu · Kexin Ye (corresponding author)',
  url:'/research/green-finance-kexin-ye.pdf',
  cover:'/research/green-finance-cover.png',
  summary:'Examining how green finance pilot zones improve firms’ green productivity through the entry of green investors.',
