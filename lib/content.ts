@@ -17,7 +17,21 @@ export const research = {health:{title:'GLOBAL CHILDHOOD CANCER',subtitle:'Healt
 export const project = {title:'UN MONITOR',url:'https://yekexin512-web.github.io/un-monitor/outputs/unmonitor-v2/',stats:[['600+','LISTINGS'],['10+','ORGANIZATIONS'],['DAILY','AUTO UPDATES'],['−70%','MANUAL SEARCH TIME']],modules:['Job Discovery','Data Dashboard','Resume Workspace'],pipeline:['SCRAPE','STRUCTURE','CATEGORIZE','FILTER','TRACK','UPDATE']};
 export const communication = [
 {name:'Tanzania Development Trust',short:'TDT',type:'IMPACT',copy:'Turning field information into stories people can understand — and act on.',stats:[['£20K+','Fundraising supported'],['10+','Project summaries']],tags:['MAILCHIMP','CANVA','SOCIAL IMPACT','FUNDRAISING','CAMPAIGN STRATEGY'],cards:['Field stories','Newsletter','Fundraising','Project summaries','Campaigns']},
-{name:'Xiaohongshu',short:'Xiaohongshu',type:'AUDIENCE',copy:'A personal content lab for learning what makes people stop, read, save and share.',stats:[['2K+','Followers'],['59K+','Likes & saves']],tags:['AUDIENCE INSIGHT','CONTENT STRATEGY','STORYTELLING','ITERATION'],cards:['London life','LSE notes','Career stories','Formula 1','Audience insights']}
+{name:'Xiaohongshu',short:'Xiaohongshu',type:'AUDIENCE',copy:'A personal content lab for learning what makes people stop, read, save and share.',stats:[['2,767','Followers'],['82K+','Likes & saves']],tags:['AUDIENCE INSIGHT','CONTENT STRATEGY','STORYTELLING','ITERATION'],cards:['London life','LSE notes','Career stories','Formula 1','Audience insights']}
 ];
 // Add supplied assets here. Null entries never produce broken images or dead links.
 export const assets:{portrait:string;aboutPhotos:(string|null)[];f1:string|null;monitor:string|null;communication:string[][];email:string|null;linkedin:string|null;resume:string|null;paper:string|null}={portrait:'/kexin-ye-portrait.jpg',aboutPhotos:[null,null],f1:null,monitor:null,communication:[[],[]],email:null,linkedin:null,resume:null,paper:null};
+
+export const communicationGalleries = [
+ [
+  {title:'Information Management',subtitle:'Organizing the story',images:[{src:'/communication/tdt-information.png',caption:'Shared information and content asset library'}]},
+  {title:'Content to Attract Audiences',subtitle:'Making people care',images:[{src:'/communication/tdt-water.png',caption:'Women & Water — audience-facing campaign content'},{src:'/communication/tdt-values.png',caption:'Communicating TDT’s values through social content'}]},
+  {title:'Fundraising Results',subtitle:'Turning attention into impact',images:[{src:'/communication/tdt-fundraising.png',caption:'The campaign raised £21,725 — fundraising supported through communication'}]}
+ ],
+ [
+  {title:'Graduation Stories',subtitle:'Creative transitions',images:[{src:'/communication/xhs-graduation.png',caption:'Graduation transition post — 4,252 likes in the supplied screenshot'},{src:'/communication/xhs-ruc.png',caption:'From admission to graduation — 1,514 likes in the supplied screenshot'}]},
+  {title:'LSE Life',subtitle:'A new chapter in London',images:[{src:'/communication/xhs-lse.png',caption:'LSE first-term vlog — 139 likes in the supplied screenshot'}]},
+  {title:'My Content Lab',subtitle:'2,767 followers · 82K+ likes & saves',images:[{src:'/communication/xhs-profile.jpg',caption:'Xiaohongshu profile — audience snapshot supplied by Kexin Ye'}]},
+  {title:'Fudan Admission',subtitle:'Milestones worth sharing',images:[{src:'/communication/xhs-fudan.png',caption:'Fudan admission unboxing — 569 likes in the supplied screenshot'}]}
+ ]
+];
