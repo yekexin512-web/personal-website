@@ -20,7 +20,18 @@ export const communication = [
 {name:'Xiaohongshu',short:'Xiaohongshu',type:'AUDIENCE',copy:'Selected visual work. Video editing and content editing independently by Kexin Ye.',stats:[],tags:['VIDEO EDITING','CONTENT EDITING','VISUAL STORYTELLING'],cards:['Selected work']}
 ];
 // Add supplied assets here. Null entries never produce broken images or dead links.
-export const assets:{portrait:string;aboutPhotos:(string|null)[];f1:string|null;monitor:string|null;communication:string[][];email:string|null;linkedin:string|null;resume:string|null;paper:string|null}={portrait:'/kexin-ye-portrait.jpg',aboutPhotos:[null,null],f1:null,monitor:null,communication:[[],[]],email:null,linkedin:null,resume:null,paper:null};
+export const assets:{portrait:string;aboutPhotos:(string|null)[];f1:string|null;monitor:string|null;communication:string[][];email:string|null;linkedin:string|null;resume:string|null;paper:string|null}={portrait:'/kexin-ye-portrait.jpg',aboutPhotos:[null,null],f1:null,monitor:null,communication:[[],[]],email:null,linkedin:null,resume:null,paper:'/research/green-finance-kexin-ye.pdf'};
+export const academicPaper = {
+ title:'绿色金融对企业绿色全要素生产率提升的影响研究——基于绿色投资者进入视角',
+ journal:'China Prices / 中国物价 · 2025, Issue 5 · pp. 42–47',
+ authors:'焦之坚 · 卢思诺 · 叶可昕（通讯作者）',
+ url:'/research/green-finance-kexin-ye.pdf',
+ cover:'/research/green-finance-cover.png',
+ summary:'Examining how green finance pilot zones improve firms’ green productivity through the entry of green investors.',
+ facts:[['2013–2023','STUDY PERIOD'],['1,395','FIRMS'],['9,691','OBSERVATIONS']],
+ methods:'A quasi-natural experiment using difference-in-differences with firm and year fixed effects. Green productivity is measured with Super-SBM; event-study, placebo and double machine learning analyses test robustness.',
+ findings:'The paper reports a positive effect on green productivity, with green-investor entry as a mechanism. Effects are more pronounced among state-owned firms and firms in highly polluting industries.'
+};
 
 export const communicationGalleries = [
  [
