@@ -17,7 +17,7 @@ export const research = {health:{title:'GLOBAL CHILDHOOD CANCER',subtitle:'Healt
 export const project = {title:'UN MONITOR',url:'https://yekexin512-web.github.io/un-monitor/outputs/unmonitor-v2/',stats:[['600+','LISTINGS'],['10+','ORGANIZATIONS'],['DAILY','AUTO UPDATES'],['−70%','MANUAL SEARCH TIME']],modules:['Job Discovery','Data Dashboard','Resume Workspace'],pipeline:['SCRAPE','STRUCTURE','CATEGORIZE','FILTER','TRACK','UPDATE']};
 export const communication = [
 {name:'Tanzania Development Trust',short:'TDT',type:'IMPACT',copy:'I turn field information into clear visual stories: designing campaign graphics, editing social content and communicating ideas that attract audiences and support fundraising.',stats:[['£20K+','Fundraising supported'],['10+','Project summaries']],tags:['GRAPHIC DESIGN','VISUAL COMMUNICATION','CANVA','CONTENT EDITING','FUNDRAISING'],cards:['Field stories','Newsletter','Fundraising','Project summaries','Campaigns']},
-{name:'Xiaohongshu',short:'Xiaohongshu',type:'AUDIENCE',copy:'Independently edited by me. I handle video editing and content editing for my Xiaohongshu posts, shaping footage into stories people stop to watch, like and save.',stats:[['2,767','Followers'],['82K+','Likes & saves']],tags:['SOLO VIDEO EDITING','CONTENT EDITING','STORYTELLING','AUDIENCE ENGAGEMENT'],cards:['London life','LSE notes','Career stories','Formula 1','Audience insights']}
+{name:'Xiaohongshu',short:'Xiaohongshu',type:'AUDIENCE',copy:'Selected visual work. Video editing and content editing independently by Kexin Ye.',stats:[],tags:['VIDEO EDITING','CONTENT EDITING','VISUAL STORYTELLING'],cards:['Selected work']}
 ];
 // Add supplied assets here. Null entries never produce broken images or dead links.
 export const assets:{portrait:string;aboutPhotos:(string|null)[];f1:string|null;monitor:string|null;communication:string[][];email:string|null;linkedin:string|null;resume:string|null;paper:string|null}={portrait:'/kexin-ye-portrait.jpg',aboutPhotos:[null,null],f1:null,monitor:null,communication:[[],[]],email:null,linkedin:null,resume:null,paper:null};
@@ -25,14 +25,15 @@ export const assets:{portrait:string;aboutPhotos:(string|null)[];f1:string|null;
 export const communicationGalleries = [
  [
   {title:'Information Management',subtitle:'Organizing the story',images:[{src:'/communication/tdt-information.png',caption:'Shared information and content asset library'}]},
-  {title:'Content to Attract Audiences',subtitle:'Making people care',images:[{src:'/communication/tdt-water.png',caption:'Women & Water — audience-facing campaign content'},{src:'/communication/tdt-values.png',caption:'Communicating TDT’s values through social content'}]},
-  {title:'Visual Storytelling',subtitle:'Graphic design · social communication',images:[{src:'/communication/tdt-values.png',caption:'Values campaign — graphic design and visual communication'},{src:'/communication/tdt-water.png',caption:'Women & Water — content designed to attract audiences'}]},
+  {title:'Content to Attract Audiences',subtitle:'Making people care',images:[{src:'/communication/tdt-water.png',caption:'Women & Water — audience-facing campaign content'}]},
+  {title:'Visual Storytelling',subtitle:'Graphic design · social communication',images:[{src:'/communication/tdt-values.png',caption:'Values campaign — graphic design and visual communication'}]},
+  {title:'Campaign Graphics',subtitle:'Designing for communication',images:[{src:'/communication/tdt-campaigns.png',caption:'Newsletter, project themes and fundraising campaign graphics'}]},
   {title:'Fundraising Results',subtitle:'Turning attention into impact',images:[{src:'/communication/tdt-fundraising.png',caption:'The campaign raised £21,725 — fundraising supported through communication'}]}
  ],
  [
-  {title:'Graduation Stories',subtitle:'4,252 likes · independently edited',images:[{src:'/communication/xhs-graduation.png',caption:'Graduation transition post — 4,252 likes in the supplied screenshot'},{src:'/communication/xhs-ruc.png',caption:'From admission to graduation — 1,514 likes in the supplied screenshot'}]},
-  {title:'LSE Life',subtitle:'139 likes · independently edited',images:[{src:'/communication/xhs-lse.png',caption:'LSE first-term vlog — 139 likes in the supplied screenshot'}]},
-  {title:'My Content Lab',subtitle:'2,767 followers · 82K+ likes & saves',images:[{src:'/communication/xhs-profile.jpg',caption:'Xiaohongshu profile — audience snapshot supplied by Kexin Ye'}]},
-  {title:'Fudan Admission',subtitle:'569 likes · independently edited',images:[{src:'/communication/xhs-fudan.png',caption:'Fudan admission unboxing — 569 likes in the supplied screenshot'}]}
+  {title:'Selected Work 01',subtitle:'Independent editing',images:[{src:'/communication/xhs-graduation.png',caption:'Selected video work · edited by Kexin Ye'}]},
+  {title:'Selected Work 02',subtitle:'Independent editing',images:[{src:'/communication/xhs-lse.png',caption:'Selected video work · edited by Kexin Ye'}]},
+  {title:'Selected Work 03',subtitle:'Independent editing',images:[{src:'/communication/xhs-ruc.png',caption:'Selected video work · edited by Kexin Ye'}]},
+  {title:'Selected Work 04',subtitle:'Independent editing',images:[{src:'/communication/xhs-fudan.png',caption:'Selected video work · edited by Kexin Ye'}]}
  ]
 ];
