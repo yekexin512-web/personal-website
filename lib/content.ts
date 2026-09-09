@@ -27,7 +27,6 @@ export const communicationGalleries = [
   {title:'Information Management',subtitle:'Organizing the story',images:[{src:'/communication/tdt-information.png',caption:'Shared information and content asset library'}]},
   {title:'Content to Attract Audiences',subtitle:'Making people care',images:[{src:'/communication/tdt-water.png',caption:'Women & Water — audience-facing campaign content'},{src:'/communication/tdt-values.png',caption:'Communicating TDT’s values through social content'}]},
   {title:'Visual Storytelling',subtitle:'Graphic design · social communication',images:[{src:'/communication/tdt-values.png',caption:'Values campaign — graphic design and visual communication'},{src:'/communication/tdt-water.png',caption:'Women & Water — content designed to attract audiences'}]},
-  {title:'Campaign Design',subtitle:'Content that connects',images:[{src:'/communication/tdt-water.png',caption:'Women & Water campaign — visual storytelling'},{src:'/communication/tdt-values.png',caption:'TDT values — social content design'}]},
   {title:'Fundraising Results',subtitle:'Turning attention into impact',images:[{src:'/communication/tdt-fundraising.png',caption:'The campaign raised £21,725 — fundraising supported through communication'}]}
  ],
  [
