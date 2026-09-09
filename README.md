@@ -1,4 +1,4 @@
-# Casey Ye — personal website
+# Kexin Ye — personal website
 
 A real Next.js App Router / TypeScript project, exported statically for hosting. Fonts are self-hosted. No remote font or animation runtime is required.
 
@@ -16,9 +16,9 @@ The production website is in `out/`. Vercel can build the project directly. Othe
 
 ## Content and assets
 
-All supplied facts are in `lib/content.ts`. The `assets` object controls the F1 background, UN Monitor screenshot, communication images, email, LinkedIn, resume and paper link. Put assets in `public/` and use paths starting with `/`. Use optimized WebP/AVIF files. Set the final site origin in layout.tsx, robots.ts and sitemap.ts when moving hosts.
+All supplied facts are in `lib/content.ts`. The `assets.portrait` field holds the supplied portrait; `assets.aboutPhotos` holds two reserved lifestyle photographs. The `assets` object controls the F1 background, UN Monitor screenshot, communication images, email, LinkedIn, resume and paper link. Put assets in `public/` and use paths starting with `/`. Use optimized WebP/AVIF files. Set the final site origin in layout.tsx, robots.ts and sitemap.ts when moving hosts.
 
-The supplied directory `D:\个人网站` was empty during implementation. The F1 photo, communication samples, contact details and paper file have not been fabricated. Current communication cards are editorial topic cards, not original screenshots. The F1 chapter uses a red typographic treatment until its image is supplied. Missing contact links are omitted. UN Monitor has a real external link and an opt-in live iframe; its initial overview is a designed product summary, not a screenshot.
+The supplied directory `D:\个人网站` was empty during implementation. The supplied personal portrait is included in About. The F1 photo, communication samples, contact details and paper file have not been fabricated. Current communication cards are editorial topic cards, not original screenshots. The F1 chapter uses a light blue photo slot until its image is supplied. Missing contact links are omitted. UN Monitor has a real external link and an opt-in live iframe; its initial overview is a designed product summary, not a screenshot.
 
 ## Implemented
 

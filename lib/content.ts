@@ -20,4 +20,4 @@ export const communication = [
 {name:'Xiaohongshu',short:'Xiaohongshu',type:'AUDIENCE',copy:'A personal content lab for learning what makes people stop, read, save and share.',stats:[['2K+','Followers'],['59K+','Likes & saves']],tags:['AUDIENCE INSIGHT','CONTENT STRATEGY','STORYTELLING','ITERATION'],cards:['London life','LSE notes','Career stories','Formula 1','Audience insights']}
 ];
 // Add supplied assets here. Null entries never produce broken images or dead links.
-export const assets:{f1:string|null;monitor:string|null;communication:string[][];email:string|null;linkedin:string|null;resume:string|null;paper:string|null}={f1:null,monitor:null,communication:[[],[]],email:null,linkedin:null,resume:null,paper:null};
+export const assets:{portrait:string;aboutPhotos:(string|null)[];f1:string|null;monitor:string|null;communication:string[][];email:string|null;linkedin:string|null;resume:string|null;paper:string|null}={portrait:'/kexin-ye-portrait.jpg',aboutPhotos:[null,null],f1:null,monitor:null,communication:[[],[]],email:null,linkedin:null,resume:null,paper:null};
