@@ -29,7 +29,7 @@ export default function Communication(){
    </div>
    <button className="ring-arrow" aria-label="Next work" onClick={()=>setPhase(p=>p+1)}>→</button>
   </div>
-  <div className="ring-pagination" aria-label="Choose work in fixed order">{items.map((item,i)=><button key={item.title} onClick={()=>center(i)} aria-label={'Center '+item.title} aria-pressed={active===i}>{String(i+1).padStart(2,'0')}</button>)}</div>
+  <div className="ring-pagination" aria-label="Choose work in fixed order">{items.map((item,i)=><button key={item.images[0].src} onClick={()=>center(i)} aria-label={'Center '+item.title} aria-pressed={active===i}>{String(i+1).padStart(2,'0')}</button>)}</div>
   <p className="gallery-hint">SWIPE TO BROWSE · CLICK THE CENTER TO OPEN</p>
   <div className="gallery-project-summary"><div><span className="eyebrow">COMMUNICATION FOR {communication[project].type}</span><p>{communication[project].copy}</p></div>{communication[project].stats.length>0&&<div className="comm-stats">{communication[project].stats.map(([value,label])=><div key={label}><strong>{value}</strong><span>{label}</span></div>)}</div>}</div>
   <div className="tags">{communication[project].tags.map(tag=><span key={tag}>{tag}</span>)}</div>

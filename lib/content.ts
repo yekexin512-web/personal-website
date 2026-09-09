@@ -17,7 +17,7 @@ export const research = {health:{title:'GLOBAL CHILDHOOD CANCER',subtitle:'Healt
 export const project = {title:'UN MONITOR',url:'https://yekexin512-web.github.io/un-monitor/outputs/unmonitor-v2/',stats:[['600+','LISTINGS'],['10+','ORGANIZATIONS'],['DAILY','AUTO UPDATES'],['−70%','MANUAL SEARCH TIME']],modules:['Job Discovery','Data Dashboard','Resume Workspace'],pipeline:['SCRAPE','STRUCTURE','CATEGORIZE','FILTER','TRACK','UPDATE']};
 export const communication = [
 {name:'Tanzania Development Trust',short:'TDT',type:'IMPACT',copy:'I turn field information into clear visual stories: designing campaign graphics, editing social content and communicating ideas that attract audiences and support fundraising.',stats:[['£20K+','Fundraising supported'],['10+','Project summaries']],tags:['GRAPHIC DESIGN','VISUAL COMMUNICATION','CANVA','CONTENT EDITING','FUNDRAISING'],cards:['Field stories','Newsletter','Fundraising','Project summaries','Campaigns']},
-{name:'Xiaohongshu',short:'Xiaohongshu',type:'AUDIENCE',copy:'Selected visual work. Video editing and content editing independently by Kexin Ye.',stats:[],tags:['VIDEO EDITING','CONTENT EDITING','VISUAL STORYTELLING'],cards:['Selected work']}
+{name:'Xiaohongshu',short:'Xiaohongshu',type:'AUDIENCE',copy:'Everyday life through daily vlogs and creative transitions. All videos independently edited by Kexin Ye.',stats:[['1M','TOTAL VIEWS'],['80K','TOTAL LIKES']],tags:['DAILY VLOGS','CREATIVE TRANSITIONS','INDEPENDENT EDITING'],cards:['Selected work']}
 ];
 // Add supplied assets here. Null entries never produce broken images or dead links.
 export const assets:{portrait:string;aboutPhotos:(string|null)[];f1:string|null;monitor:string|null;communication:string[][];email:string|null;linkedin:string|null;resume:string|null;paper:string|null}={portrait:'/kexin-ye-portrait.jpg',aboutPhotos:[null,null],f1:null,monitor:null,communication:[[],[]],email:null,linkedin:null,resume:null,paper:'/research/green-finance-kexin-ye.pdf'};
@@ -42,9 +42,10 @@ export const communicationGalleries = [
   {title:'Fundraising Results',subtitle:'Turning attention into impact',images:[{src:'/communication/tdt-fundraising.png',caption:'The campaign raised £21,725 — fundraising supported through communication'}]}
  ],
  [
-  {title:'Selected Work 01',subtitle:'Independent editing',images:[{src:'/communication/xhs-graduation.png',caption:'Selected video work · edited by Kexin Ye'}]},
-  {title:'Selected Work 02',subtitle:'Independent editing',images:[{src:'/communication/xhs-lse.png',caption:'Selected video work · edited by Kexin Ye'}]},
-  {title:'Selected Work 03',subtitle:'Independent editing',images:[{src:'/communication/xhs-ruc.png',caption:'Selected video work · edited by Kexin Ye'}]},
-  {title:'Selected Work 04',subtitle:'Independent editing',images:[{src:'/communication/xhs-fudan.png',caption:'Selected video work · edited by Kexin Ye'}]}
+  {title:'Creative Transitions',subtitle:'Graduation · Independent editing',images:[{src:'/communication/xhs-graduation.png',caption:'Creative graduation transitions · independently edited by Kexin Ye'}]},
+  {title:'Daily Vlogs',subtitle:'Campus life · Independent editing',images:[{src:'/communication/xhs-lse.png',caption:'Daily vlogs sharing university life · independently edited by Kexin Ye'}]},
+  {title:'Creative Transitions',subtitle:'Life milestones · Independent editing',images:[{src:'/communication/xhs-ruc.png',caption:'Life milestones told through creative transitions · independently edited by Kexin Ye'}]},
+  {title:'Creative Transitions',subtitle:'Unboxing · Independent editing',images:[{src:'/communication/xhs-fudan.png',caption:'An admission-letter unboxing with creative transitions · independently edited by Kexin Ye'}]},
+  {title:'Daily Vlogs',subtitle:'Life in London · Independent editing',images:[{src:'/communication/xhs-museum-vlog.png',caption:'A museum ball in London · daily vlog independently edited by Kexin Ye'}]}
  ]
 ];
