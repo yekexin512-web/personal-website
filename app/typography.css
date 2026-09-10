@@ -23,6 +23,7 @@ button,input,select,textarea,nav,figcaption,th,td,code,small{font-family:var(--f
 .aj-photo figcaption i{font-family:var(--font-mono)!important;font-size:11px;font-style:normal}
 :root{--type-section:clamp(26px,2.7vw,40px)}
 .display-heading,.communication-heading .display-heading,.aj-heading h2,.next-adventure h2{font-size:var(--type-section)!important;line-height:1.1!important;letter-spacing:-.035em!important}
+.research-heading{max-width:12ch;margin-bottom:clamp(18px,2.5vw,36px)}
 .display-heading :is(i,em),.aj-heading h2 :is(i,em),.next-adventure h2 :is(i,em){font-size:inherit}
 .academic-copy>p:not([class]),.academic-copy details p{font-size:17px;line-height:1.65;max-width:65ch}
 .research-track .contribution-copy p{font-size:17px;line-height:1.6;max-width:65ch}
