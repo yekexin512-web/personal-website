@@ -1,6 +1,4 @@
-@font-face{font-family:'DM Serif Display';src:url('/fonts/dm-serif-regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:'IBM Plex Mono';src:url('/fonts/ibm-plex-mono.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
-:root{--font-serif:'DM Serif Display',Georgia,serif;--font-mono:'IBM Plex Mono',monospace;--type-hero:clamp(44px,5vw,84px);--type-section:clamp(38px,5.4vw,82px);--type-project:clamp(26px,3vw,44px);--type-body:clamp(17px,1.35vw,21px);--type-label:clamp(9px,.8vw,12px)}
+:root{--font-serif:var(--font-dm-serif),Georgia,serif;--font-mono:var(--font-ibm-mono),monospace;--type-hero:clamp(44px,5vw,84px);--type-section:clamp(38px,5.4vw,82px);--type-project:clamp(26px,3vw,44px);--type-body:clamp(17px,1.35vw,21px);--type-label:clamp(9px,.8vw,12px)}
 body{font-family:var(--font-serif);font-size:var(--type-body);font-weight:400;line-height:1.65;font-synthesis:none}
 /* One upright style throughout, including semantic emphasis and legacy wrappers. */
 body *,body *::before,body *::after{font-style:normal!important;font-synthesis:none}
