@@ -23,7 +23,7 @@ export default function Communication(){
  useEffect(()=>{if(opened===null)return;dialog.current?.showModal();const old=document.body.style.overflow;document.body.style.overflow='hidden';return()=>{document.body.style.overflow=old}},[opened]);
  return <section id="communication" className="communication pad ring-section">
   <header className="communication-heading"><div className="section-mark"><span>05 /</span>COMMUNICATION<span className="mark-line"/></div>
-  <h2 className="display-heading">MAKING IDEAS <span>travel.</span></h2>
+  <h2 className="display-heading">Making ideas <span>travel.</span></h2>
   <div className="photo-project-tabs" aria-label="Communication projects">{communication.map((p,i)=><button key={p.name} aria-pressed={project===i} onClick={()=>{setProject(i);setPhase(0)}}>{p.name}<span>{p.type}</span></button>)}</div>
   </header><div className="communication-body"><aside className="communication-story"><span className="eyebrow">COMMUNICATION FOR {communication[project].type}</span><p>{communication[project].copy}</p><div className="communication-skills">{communication[project].tags.map(tag=><span key={tag}>{tag}</span>)}</div></aside><div className="ring-carousel" role="region" aria-roledescription="carousel" aria-label={communication[project].name} onKeyDown={e=>{if(e.key==='ArrowRight'){e.preventDefault();setPhase(p=>p+1)}if(e.key==='ArrowLeft'){e.preventDefault();setPhase(p=>p-1)}}}>
    <button className="ring-arrow" aria-label="Previous work" onClick={()=>setPhase(p=>p-1)}>←</button>
