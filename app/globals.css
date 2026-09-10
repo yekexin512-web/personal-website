@@ -31,5 +31,19 @@ body{background:#fafaf8;color:#16375b}::selection{background:#c9d9e9;color:#102f
 @media(max-width:1100px) and (min-width:761px){.polaroid-stage[style*="5"] .polaroid{transform:translateX(calc(var(--offset)*95px)) translateY(var(--drop)) rotate(var(--tilt))}.polaroid-stage[style*="5"] .polaroid:hover,.polaroid-stage[style*="5"] .polaroid:focus-visible{transform:translateX(calc(var(--offset)*95px)) translateY(-8px) rotate(0)}}
 @media(max-width:760px){.polaroid-stage[style*="5"] .polaroid{transform:rotate(-3deg)}.polaroid-stage[style*="5"] .polaroid:nth-child(2n){transform:rotate(3deg)}.polaroid-stage[style*="5"] .polaroid:hover,.polaroid-stage[style*="5"] .polaroid:focus-visible{transform:translateY(-4px) rotate(0)}}
 
+/* Vibe Coding layout: outcome, navigation and live-project action. */
+.project-impact{margin-left:auto;align-self:end;text-align:right;padding-right:1vw}
+.project-impact strong{display:block;font:clamp(56px,6vw,92px)/.88 var(--font-serif);letter-spacing:-.045em;color:#234f80}
+.project-impact span{display:block;margin-top:10px;font:11px/1.4 var(--font-mono);letter-spacing:.08em;color:#61788d}
+.product-sidebar>span{font-family:var(--font-serif);font-size:clamp(17px,1.35vw,22px);line-height:1.25;color:#16375b}
+.product-overview{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(240px,.75fr);align-items:center;gap:clamp(35px,6vw,90px)}
+.product-overview-main>.eyebrow{color:#61788d;font-size:9px}
+.product-cta{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-height:190px}
+.product-cta .lime-button{width:100%;min-height:58px;margin:0 0 12px;font-size:12px;letter-spacing:.06em}
+.product-cta .eyebrow{font-size:9px;color:#61788d}
+.vibe-bottom-single{grid-template-columns:1fr}
+.vibe-bottom-single>div{max-width:760px;margin-left:auto}
+@media(max-width:760px){.project-title{align-items:flex-end}.project-impact strong{font-size:48px}.project-impact span{font-size:8px}.product-overview{grid-template-columns:1fr;gap:24px}.product-cta{min-height:0}.product-sidebar>span{font-size:18px}.vibe-bottom-single>div{margin-left:0}}
+
 .health-panel{display:none}
 .legacy-health{display:none}
