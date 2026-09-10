@@ -1,0 +1,32 @@
+@font-face{font-family:'DM Serif Display';src:url('/fonts/dm-serif-regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'IBM Plex Mono';src:url('/fonts/ibm-plex-mono.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+:root{--font-serif:'DM Serif Display',Georgia,serif;--font-mono:'IBM Plex Mono',monospace;--type-hero:clamp(44px,5vw,84px);--type-section:clamp(38px,5.4vw,82px);--type-project:clamp(26px,3vw,44px);--type-body:clamp(17px,1.35vw,21px);--type-label:clamp(9px,.8vw,12px)}
+body{font-family:var(--font-serif);font-size:var(--type-body);font-weight:400;line-height:1.65;font-synthesis:none}
+/* One upright style throughout, including semantic emphasis and legacy wrappers. */
+body *,body *::before,body *::after{font-style:normal!important;font-synthesis:none}
+h1,h2,h3,h4,h5,h6,blockquote{font-family:var(--font-serif)!important;font-weight:400!important}
+/* Heading words are one typeface, including nested UI/utility classes.
+   Labels and section numbers belong outside the editorial heading. */
+body :is(h1,h2,h3,h4,h5,h6,.display-heading){font-family:var(--font-serif)!important;font-weight:400!important}
+body :is(h1,h2,h3,h4,h5,h6,.display-heading) *{font-family:inherit!important;font-weight:inherit!important;font-style:normal!important;font-synthesis:none}
+p{font-family:var(--font-serif)!important}
+button,input,select,textarea,nav,figcaption,th,td,code,small{font-family:var(--font-mono)}
+.display-heading{font-size:var(--type-section)!important;line-height:1.08!important;letter-spacing:-.035em!important}
+.editorial-cover h1{font-size:var(--type-hero)!important;letter-spacing:-.04em;white-space:normal}
+.editorial-intro{font-family:var(--font-serif);font-size:clamp(18px,1.4vw,22px);line-height:1.6;max-width:65ch}
+.editorial-cover{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr)}
+.story,.job-body>p,.gallery-project-summary>p,.aj-description,.aj-copy .aj-description,.next-adventure>p{font-family:var(--font-serif)!important;font-size:var(--type-body);line-height:1.65;max-width:65ch}
+.eyebrow,.section-mark,.top-note,.chapter-nav,.topbar,.process-strip,.tags,.copyright,.scroll-cue,.text-link,.editorial-tags,.editorial-story-link,.aj-index,.aj-place,.aj-skills,.aj-years,.aj-heading>span,.aj-heading>p,.aj-timeline>p,.adventure-hint,.metric-label,.mobile-period{font-family:var(--font-mono)!important}
+.aj-place,.aj-skills,.aj-heading>p,.aj-timeline>p{font-size:var(--type-label)}
+.metric,.secondary-metrics strong,.health-stats strong,.comm-stats strong,.nav-count,.footer-name,.adventure-name{font-family:var(--font-serif)!important;font-weight:400!important}
+.nav-count{font-family:var(--font-mono)!important}
+.aj-copy h3{font-size:clamp(23px,2.3vw,34px);line-height:1.15}.aj-heading h2{font-size:clamp(25px,2.6vw,38px)}
+.editorial-tags li,.aj-photo figcaption span,.next-adventure footer>div,.next-adventure footer small{font-family:var(--font-mono)}
+.aj-photo figcaption i{font-family:var(--font-mono)!important;font-size:11px;font-style:normal}
+:root{--type-section:clamp(26px,2.7vw,40px)}
+.display-heading,.communication-heading .display-heading,.aj-heading h2,.next-adventure h2{font-size:var(--type-section)!important;line-height:1.1!important;letter-spacing:-.035em!important}
+.display-heading :is(i,em),.aj-heading h2 :is(i,em),.next-adventure h2 :is(i,em){font-size:inherit}
+.academic-copy>p:not([class]),.academic-copy details p{font-size:17px;line-height:1.65;max-width:65ch}
+.research-track .contribution-copy p{font-size:17px;line-height:1.6;max-width:65ch}
+.gallery-hint,.academic-meta,.academic-role,.canvas-background .eyebrow,.communication-controls p{font-family:var(--font-mono)!important}
+@media(max-width:760px){.editorial-cover{grid-template-columns:1fr}.editorial-cover h1{font-size:clamp(39px,9.3vw,65px)!important}.editorial-intro{font-size:18px;line-height:1.65}.aj-copy .aj-description{font-size:14px;line-height:1.5}.aj-copy h3{font-size:22px}.aj-skills{font-size:8px}}

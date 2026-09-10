@@ -1,29 +1,35 @@
-# Kexin Ye — personal website
+# Kexin Ye — Personal Portfolio
 
-A real Next.js App Router / TypeScript project, exported statically for hosting. Fonts are self-hosted. No remote font or animation runtime is required.
+This repository contains the complete editable source code for the portfolio. It is a statically exported Next.js website and includes an automatic GitHub Pages deployment workflow.
 
-## Run
+## Publish with GitHub Pages
 
-Node.js 20.9+ and pnpm are required.
+1. Create or open a GitHub repository.
+2. Upload everything in this repository, including the hidden `.github` folder.
+3. Commit the files to the `main` branch.
+4. Open **Settings → Pages** in GitHub.
+5. Under **Build and deployment**, select **GitHub Actions**.
+6. Open the **Actions** tab and wait for **Deploy personal website** to finish.
 
-```
+Every later commit to `main` automatically rebuilds and republishes the website.
+
+## Edit locally
+
+Install Node.js 22 and pnpm, then run:
+
+```bash
 pnpm install --frozen-lockfile
 pnpm dev
+```
+
+Open <http://127.0.0.1:3000>.
+
+## Verify the static build
+
+```bash
 pnpm build
 ```
 
-The production website is in `out/`. Vercel can build the project directly. Other static hosts can serve `out/`.
+The static site is written to `out/`. Do not upload `node_modules`, `.next`, or `out`; GitHub Actions creates the deployable version automatically.
 
-## Content and assets
-
-All supplied facts are in `lib/content.ts`. The `assets.portrait` field holds the supplied portrait; `assets.aboutPhotos` holds two reserved lifestyle photographs. The `assets` object controls the F1 background, UN Monitor screenshot, communication images, email, LinkedIn, resume and paper link. Put assets in `public/` and use paths starting with `/`. Use optimized WebP/AVIF files. Set the final site origin in layout.tsx, robots.ts and sitemap.ts when moving hosts.
-
-The supplied directory `D:\个人网站` was empty during implementation. The supplied personal portrait is included in About. The F1 photo, communication samples, contact details and paper file have not been fabricated. Current communication cards are editorial topic cards, not original screenshots. The F1 chapter uses a light blue photo slot until its image is supplied. Missing contact links are omitted. UN Monitor has a real external link and an opt-in live iframe; its initial overview is a designed product summary, not a screenshot.
-
-## Implemented
-
-Six persistent chapters, responsive mobile menu with focus containment/Escape, identity hover and focus states, chapter directory, parallel education/work timeline, three distinct experience scenes, editorial research, product preview, expandable build story, split fan decks, mobile project selector and horizontally scrollable cards, reduced-motion support, keyboard focus states, metadata, favicon, social cover, robots and sitemap.
-
-## Remaining acceptance checks
-
-The photo-based ending and original image decks require the missing assets. No Lighthouse score or browser/device interaction test is claimed. Run these before public launch, especially at 200% zoom and with final photos. All requested statistics are from the supplied brief; schematic UI is explicitly identified.
+Editable content lives mainly in `lib/content.ts`, components in `components/`, and media assets in `public/`.
